@@ -39,7 +39,7 @@
 			</a>
 	</display:column>
 	<display:column>
-			<a href="warehouse/delete.do?warehouseId=${row.id}"> <spring:message
+			<a href="warehouse/edit.do?warehouseId=${row.id}"> <spring:message
 					code="warehouse.delete" />
 			</a>
 	</display:column>

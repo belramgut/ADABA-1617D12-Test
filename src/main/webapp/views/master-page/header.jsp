@@ -96,6 +96,10 @@
 						code="master.page.listCategories" /></a></li>
 			<li><a class="fNiv" href="distributor/list.do"><spring:message
 						code="master.page.listDistributors" /></a></li>
+			<li><a class="fNiv" href="distributor/register.do"><spring:message
+						code="master.page.registerDistributor" /></a></li>
+			<li><a class="fNiv" href="commercial/register.do"><spring:message
+						code="master.page.registerCommercial" /></a></li>
 		</security:authorize>
 
 		<security:authorize access="isAuthenticated()">
@@ -104,6 +108,10 @@
 						code="master.page.listCategories" /></a></li>
 			<li><a class="fNiv" href="distributor/list.do"><spring:message
 						code="master.page.listDistributors" /></a></li>
+			<li><a class="fNiv" href="distributor/register.do"><spring:message
+						code="master.page.registerDistributor" /></a></li>
+			<li><a class="fNiv" href="commercial/register.do"><spring:message
+						code="master.page.registerCommercial" /></a></li>
 
 			<li><a class="fNiv"><spring:message code="master.page.chirp" /></a>
 				<ul>
