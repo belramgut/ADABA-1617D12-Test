@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles_es.xml
+ *
+ * Copyright (C) 2017 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+      
+<tiles-definitions>
+
+	<definition name="distributor/register" extends="master.page">	
+		<put-attribute name="title" value="Registro de un Distribuidor" />
+		<put-attribute name="body" value="/views/distributor/register.jsp" />
+	</definition>
+	
+	<definition name="distributor/dataProtection" extends="master.page">
+		<put-attribute name="title" value="Terminos de Uso"/>
+		<put-attribute name="body" value="/views/distributor/dataProtection.jsp"/>
+	</definition>
+	
+	<definition name="distributor/profile" extends="master.page">
+		<put-attribute name="title" value="Perfil de un distribuidor" />
+		<put-attribute name="body" value="/views/distributor/displayProfile.jsp" />
+	</definition>
+	
+	<definition name="distributor/editProfile" extends="master.page">
+		<put-attribute name="title" value="Editar perfil Distribuidor" />
+		<put-attribute name="body" value="/views/distributor/editProfile.jsp" />
+	</definition>
+	
+	<definition name="distributor/list" extends="master.page">
+		<put-attribute name="title" value="Lista de Distribuidores" />
+		<put-attribute name="body" value="/views/distributor/list.jsp" />
+	</definition>
+	
+</tiles-definitions>

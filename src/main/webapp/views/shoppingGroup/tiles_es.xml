@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles_es.xml
+ *
+ * Copyright (C) 2016 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+      
+<tiles-definitions>
+
+	<definition name="shoppingGroup/list" extends="master.page">	
+		<put-attribute name="title" value="Grupos a los que estas unido" />
+		<put-attribute name="body" value="/views/shoppingGroup/list.jsp"/>
+	</definition>
+	
+	<definition name="category/shlist" extends="master.page">	
+		<put-attribute name="title" value="Grupos de compra en la categoría seleccionada" />
+		<put-attribute name="body" value="/views/shoppingGroup/list3.jsp"/>
+	</definition>
+	
+	<definition name="shoppingGroup/list2" extends="master.page">	
+		<put-attribute name="title" value="Lista de grupos de compra" />
+		<put-attribute name="body" value="/views/shoppingGroup/list2.jsp"/>
+	</definition>
+	
+	<definition name="shoppingGroup/display" extends="master.page">	
+		<put-attribute name="title" value="Detalles del grupo de compra" />
+		<put-attribute name="body" value="/views/shoppingGroup/display.jsp"/>
+	</definition>
+	
+	<definition name="shoppingGroup/edit" extends="master.page">	
+		<put-attribute name="title" value="Editar Grupo de Compra" />
+		<put-attribute name="body" value="/views/shoppingGroup/edit.jsp"/>
+	</definition>
+	
+	<definition name="shoppingGroup/edit2" extends="master.page">	
+		<put-attribute name="title" value="Editar Grupo de Compra" />
+		<put-attribute name="body" value="/views/shoppingGroup/edit2.jsp"/>
+	</definition>
+	
+	<definition name="shoppingGroup/edit3" extends="master.page">	
+		<put-attribute name="title" value="Editar Grupo de Compra Privado" />
+		<put-attribute name="body" value="/views/shoppingGroup/edit3.jsp"/>
+	</definition>
+	
+	<definition name="errorOperation" extends="master.page">	
+		<put-attribute name="title" value="Operación no permitida" />
+		<put-attribute name="body" value="/views/shoppingGroup/forbiddenOperation.jsp"/>
+	</definition>
+	
+	<definition name="joinToShFormulario" extends="master.page">	
+		<put-attribute name="title" value="Condiciones para unirse a un grupo" />
+		<put-attribute name="body" value="/views/shoppingGroup/joinTo.jsp"/>
+	</definition>
+	
+	<definition name="engagements/details" extends="master.page">	
+		<put-attribute name="title" value="Contrato de compra" />
+		<put-attribute name="body" value="/views/shoppingGroup/engagement.jsp"/>
+	</definition>
+	
+	<definition name="couponToFormulario" extends="master.page">	
+		<put-attribute name="title" value="Cupones" />
+		<put-attribute name="body" value="/views/shoppingGroup/couponForOrder.jsp"/>
+	</definition>
+	
+	
+</tiles-definitions>
