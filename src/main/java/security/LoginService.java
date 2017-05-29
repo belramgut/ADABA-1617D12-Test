@@ -60,7 +60,7 @@ public class LoginService implements UserDetailsService {
 		if (authority.getAuthority().equals("USER")) {
 			User user;
 			user = this.uRepository.findByUserAccountId(userAccount.getId());
-			Assert.isTrue(user.isBanned() == false);
+			//			Assert.isTrue(user.isBanned() == false);
 		}
 
 		// WARNING: The following sentences prevent lazy initialisation problems!
