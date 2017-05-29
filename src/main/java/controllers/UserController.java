@@ -296,7 +296,7 @@ public class UserController extends AbstractController {
 		user = this.userService.findOne(userId);
 
 		try {
-			Assert.isTrue(principal.getId() != user.getId());
+			//Assert.isTrue(principal.getId() != user.getId());
 			this.userService.follow(user.getId());
 			result = new ModelAndView("redirect:listUnbanned.do");
 

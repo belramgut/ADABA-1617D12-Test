@@ -229,8 +229,8 @@ public class UserService {
 		other = this.findOne(userId);
 		Assert.notNull(other);
 
-		Assert.isTrue(other.getId() != principal.getId());
-		Assert.isTrue(!principal.getFriends().contains(other));
+		//		Assert.isTrue(other.getId() != principal.getId());
+		//		Assert.isTrue(!principal.getFriends().contains(other));
 
 		principal.follow(other);
 
