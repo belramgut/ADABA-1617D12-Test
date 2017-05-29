@@ -116,7 +116,7 @@ public class ShoppingGroupService {
 		Assert.isTrue(s.getLastOrderDate() == null);
 		Assert.isTrue(s.getCreator().getId() == principal.getId());
 
-		this.privateMessageService.deleteGroupMessage(s, principal);
+		//this.privateMessageService.deleteGroupMessage(s, principal);
 
 		for (final Product p : s.getProducts()) {
 			this.productService.delete(p);
