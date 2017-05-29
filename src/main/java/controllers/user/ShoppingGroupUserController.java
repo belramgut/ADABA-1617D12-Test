@@ -168,11 +168,7 @@ public class ShoppingGroupUserController extends AbstractController {
 
 		principal = this.userService.findByPrincipal();
 		usuarios = new ArrayList<User>();
-		usuarios.addAll(principal.getFriends());
-
-		for (final User u : usuarios)
-			if (u.isBanned())
-				usuarios.remove(u);
+		usuarios.addAll(this.userService.findAll());
 
 		shoppingGroupForm = new ShoppingGroupFormPrivate();
 		cats = this.categoryService.findAll2();
@@ -1095,11 +1091,7 @@ public class ShoppingGroupUserController extends AbstractController {
 
 		principal = this.userService.findByPrincipal();
 		usuarios = new ArrayList<User>();
-		usuarios.addAll(principal.getFriends());
-
-		for (final User u : usuarios)
-			if (u.isBanned())
-				usuarios.remove(u);
+		usuarios.addAll(this.userService.findAll());
 
 		Collection<Category> cats;
 		cats = this.categoryService.findAll2();
